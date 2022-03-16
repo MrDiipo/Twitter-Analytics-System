@@ -1,6 +1,7 @@
 package com.mrdiipo.twittertokafkaservice;
 
 import com.mrdiipo.twittertokafkaservice.config.ConfigData;
+import com.mrdiipo.twittertokafkaservice.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -14,9 +15,11 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
 	private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
 	private final ConfigData configData;
+	private final StreamRunner streamRunner;
 
-	public TwitterToKafkaServiceApplication(ConfigData configData) {
+	public TwitterToKafkaServiceApplication(ConfigData configData, StreamRunner streamRunner) {
 		this.configData = configData;
+		this.streamRunner = streamRunner;
 	}
 
 	public static void main(String[] args) {
@@ -27,5 +30,6 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		LOG.info("App Starts...");
 		LOG.info(Arrays.toString(configData.getTwitterKeywords().toArray(new String[] {})));
+		streamRunner.start();
 	}
 }
