@@ -5,6 +5,10 @@ twitter-to-kafka-service:
     - Spring
     - Kafka
     - ElasticSearch
+    - kubernetes
+    - DevOps
+    - Containers
+    - GoLang
   enable-mock-tweets: true
   mock-min-tweet-length: 5
   mock-max-tweet-length: 15

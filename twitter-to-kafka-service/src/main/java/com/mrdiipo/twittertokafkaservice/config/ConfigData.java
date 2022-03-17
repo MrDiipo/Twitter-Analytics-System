@@ -17,6 +17,5 @@ public class ConfigData {
     private Integer mockMinTweetLength;
     private Integer mockMaxTweetLength;
 
-
 }
 
