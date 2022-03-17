@@ -1,0 +1,53 @@
+2022-03-14 10:19:49,670 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.joran.action.LoggerAction - No 'name' attribute in element logger, around line: 43, column: 46
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an AppenderAttachable at the top of execution stack. Near [appender-ref] line 44
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an AppenderAttachable at the top of execution stack. Near [appender-ref] line 45
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:21)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.joran.action.LoggerAction - No 'name' attribute in element logger, around line: 43, column: 46
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an AppenderAttachable at the top of execution stack. Near [appender-ref] line 44
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an AppenderAttachable at the top of execution stack. Near [appender-ref] line 45
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+2022-03-14 10:21:52,490 INFO org.springframework.boot.StartupInfoLogger [main] Starting TwitterToKafkaServiceApplication using Java 11.0.14.1 on WINDOWS-0UQB5OE with PID 14676 (C:\Users\NEPTUNEDEVELOP1\Documents\Twitter-Analytics-System\twitter-to-kafka-service\target\classes started by NEPTUNEDEVELOP1 in C:\Users\NEPTUNEDEVELOP1\Documents\Twitter-Analytics-System)
+2022-03-14 10:21:52,494 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-14 10:21:52,495 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-14 10:21:52,953 INFO org.springframework.boot.StartupInfoLogger [main] Started TwitterToKafkaServiceApplication in 0.84 seconds (JVM running for 1.847)
+2022-03-14 10:21:52,956 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] App Starts...
+2022-03-14 10:21:52,956 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] [Ljava.lang.String;@369c9bb
+2022-03-14 10:23:47,619 INFO org.springframework.boot.StartupInfoLogger [main] Starting TwitterToKafkaServiceApplication using Java 11.0.14.1 on WINDOWS-0UQB5OE with PID 18216 (C:\Users\NEPTUNEDEVELOP1\Documents\Twitter-Analytics-System\twitter-to-kafka-service\target\classes started by NEPTUNEDEVELOP1 in C:\Users\NEPTUNEDEVELOP1\Documents\Twitter-Analytics-System)
+2022-03-14 10:23:47,621 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-14 10:23:47,622 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-14 10:23:48,055 INFO org.springframework.boot.StartupInfoLogger [main] Started TwitterToKafkaServiceApplication in 0.814 seconds (JVM running for 1.798)
+2022-03-14 10:23:48,057 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] App Starts...
+2022-03-14 10:23:48,057 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] [Ljava.lang.Object;@68dcfd52
+2022-03-14 10:25:46,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting TwitterToKafkaServiceApplication using Java 11.0.14.1 on WINDOWS-0UQB5OE with PID 8124 (C:\Users\NEPTUNEDEVELOP1\Documents\Twitter-Analytics-System\twitter-to-kafka-service\target\classes started by NEPTUNEDEVELOP1 in C:\Users\NEPTUNEDEVELOP1\Documents\Twitter-Analytics-System)
+2022-03-14 10:25:46,294 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-14 10:25:46,294 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-14 10:25:46,777 INFO org.springframework.boot.StartupInfoLogger [main] Started TwitterToKafkaServiceApplication in 0.899 seconds (JVM running for 2.035)
+2022-03-14 10:25:46,780 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] App Starts...
+2022-03-14 10:25:46,780 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] [-Java -Microservices -Spring -Kafka -ElasticSearch]

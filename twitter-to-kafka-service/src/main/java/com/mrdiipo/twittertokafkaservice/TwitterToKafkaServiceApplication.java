@@ -4,6 +4,7 @@ import com.mrdiipo.twittertokafkaservice.config.ConfigData;
 import com.mrdiipo.twittertokafkaservice.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,7 +18,7 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 	private final ConfigData configData;
 	private final StreamRunner streamRunner;
 
-	public TwitterToKafkaServiceApplication(ConfigData configData, StreamRunner streamRunner) {
+	public TwitterToKafkaServiceApplication(ConfigData configData, @Qualifier("mockKafkaStreamRunner") StreamRunner streamRunner) {
 		this.configData = configData;
 		this.streamRunner = streamRunner;
 	}
