@@ -1,6 +1,6 @@
 package com.mrdiipo.twittertokafkaservice.runner.impl;
 
-import com.mrdiipo.twittertokafkaservice.config.ConfigData;
+import com.mrdiipo.appconfigdata.config.ConfigData;
 import com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener;
 import com.mrdiipo.twittertokafkaservice.runner.StreamRunner;
 import org.slf4j.Logger;

@@ -29,6 +29,11 @@
 			<version>4.0.7</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.mrdiipo</groupId>
+			<artifactId>app-config-data</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
