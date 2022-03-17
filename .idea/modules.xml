@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app-config-data/app-config-data.iml" filepath="$PROJECT_DIR$/app-config-data/app-config-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docker-compose/docker-compose.iml" filepath="$PROJECT_DIR$/docker-compose/docker-compose.iml" />
       <module fileurl="file://$PROJECT_DIR$/twitter-to-kafka-service/twitter-to-kafka-service.iml" filepath="$PROJECT_DIR$/twitter-to-kafka-service/twitter-to-kafka-service.iml" />
     </modules>
   </component>
