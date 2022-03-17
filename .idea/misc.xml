@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/twitter-to-kafka-service/pom.xml" />
+        <option value="$PROJECT_DIR$/app-config-data/pom.xml" />
       </list>
     </option>
   </component>
