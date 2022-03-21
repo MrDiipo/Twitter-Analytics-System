@@ -5,6 +5,10 @@
       <list>
         <option value="$PROJECT_DIR$/twitter-to-kafka-service/pom.xml" />
         <option value="$PROJECT_DIR$/app-config-data/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/../kafka-model/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka/kafka-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka/kafka-model/pom.xml" />
       </list>
     </option>
   </component>
