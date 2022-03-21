@@ -1,5 +1,5 @@
 {
-"namespace": "com.mrdiipo.twitter-analytics-system.kafka.avro.model",
+"namespace": "com.mrdiipo.kafka.avro.model",
 "type": "record",
 "name": "TwitterAvroModel",
 "fields": [
