@@ -1,0 +1,91 @@
+2022-03-23 11:30:56,044 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: mapping values are not allowed here
+ in 'reader', line 25, column 33:
+        bootstrap-servers: localhost:
+                                    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchValue(ScannerImpl.java:890)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:379)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:248)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:634)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:165)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:59)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:45)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:140)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:119)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:214)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:184)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:314)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:305)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:286)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:188)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:115)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:135)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:514)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:198)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:166)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:107)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:128)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:86)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:116)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:240)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:227)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:102)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:94)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:87)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:297)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:29)
+2022-03-23 11:45:01,071 INFO org.springframework.boot.StartupInfoLogger [main] Starting TwitterToKafkaServiceApplication using Java 11.0.14.1 on Nep-Lagos-SVN with PID 12684 (C:\Users\Neptune\Documents\DIPO\Twitter-Analytics-System\twitter-to-kafka-service\target\classes started by Neptune in C:\Users\Neptune\Documents\DIPO\Twitter-Analytics-System)
+2022-03-23 11:45:01,074 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-23 11:45:01,075 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-23 11:45:01,776 INFO org.springframework.boot.StartupInfoLogger [main] Started TwitterToKafkaServiceApplication in 1.053 seconds (JVM running for 1.894)
+2022-03-23 11:45:01,779 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] App Starts...
+2022-03-23 11:45:01,779 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] [Java, Microservices, Spring, Kafka, ElasticSearch, kubernetes, DevOps, Containers, GoLang]
+2022-03-23 11:45:01,779 INFO com.mrdiipo.twittertokafkaservice.runner.impl.MockKafkaStreamRunner [main] Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, ElasticSearch, kubernetes, DevOps, Containers, GoLang]
+2022-03-23 11:45:01,843 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text libero Lorem libero elit kubernetes pulvinar ultricies sit
+2022-03-23 11:45:11,844 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text massa porttitor dolor adipiscing ElasticSearch massa consectetuer
+2022-03-23 11:45:21,845 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text massa lectus libero Fusce porttitor GoLang Lorem pulvinar Fusce
+2022-03-23 11:45:31,848 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text Maecenas massa malesuada consectetuer amet Spring elit lectus libero
+2022-03-23 11:45:41,849 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text Lorem malesuada magna sed purus ElasticSearch Maecenas massa Maecenas
+2022-03-23 11:46:12,521 INFO org.springframework.boot.StartupInfoLogger [main] Starting TwitterToKafkaServiceApplication using Java 11.0.14.1 on Nep-Lagos-SVN with PID 16704 (C:\Users\Neptune\Documents\DIPO\Twitter-Analytics-System\twitter-to-kafka-service\target\classes started by Neptune in C:\Users\Neptune\Documents\DIPO\Twitter-Analytics-System)
+2022-03-23 11:46:12,524 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.4, Spring v5.3.16
+2022-03-23 11:46:12,524 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-23 11:46:13,141 INFO org.springframework.boot.StartupInfoLogger [main] Started TwitterToKafkaServiceApplication in 0.991 seconds (JVM running for 1.88)
+2022-03-23 11:46:13,145 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] App Starts...
+2022-03-23 11:46:13,145 INFO com.mrdiipo.twittertokafkaservice.TwitterToKafkaServiceApplication [main] [Java, Microservices, Spring, Kafka, ElasticSearch, kubernetes, DevOps, Containers, GoLang]
+2022-03-23 11:46:13,145 INFO com.mrdiipo.twittertokafkaservice.runner.impl.MockKafkaStreamRunner [main] Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, ElasticSearch, kubernetes, DevOps, Containers, GoLang]
+2022-03-23 11:46:13,224 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text malesuada libero elit congue GoLang ultricies lectus
+2022-03-23 11:46:23,225 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text malesuada Lorem ipsum magna Maecenas ElasticSearch congue Fusce purus
+2022-03-23 11:46:33,227 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text porttitor ultricies adipiscing amet consectetuer libero purus Spring amet magna Maecenas massa dolor
+2022-03-23 11:46:43,230 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text consectetuer posuere adipiscing Fusce ultricies magna GoLang porttitor porttitor dolor pulvinar
+2022-03-23 11:46:53,232 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text posuere malesuada Fusce malesuada purus sed dolor Kafka ipsum Fusce pulvinar sit dolor
+2022-03-23 11:47:03,236 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text elit adipiscing Maecenas amet congue massa purus malesuada Kafka sed massa dolor amet Fusce pulvinar elit
+2022-03-23 11:47:13,238 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text lectus sed congue magna magna DevOps massa Maecenas Fusce purus
+2022-03-23 11:47:23,240 INFO com.mrdiipo.twittertokafkaservice.listener.TwitterKafkaStatusListener [pool-1-thread-1] Twitter status with text elit libero pulvinar pulvinar pulvinar lectus Maecenas purus Microservices Maecenas magna Maecenas sed Maecenas ipsum adipiscing

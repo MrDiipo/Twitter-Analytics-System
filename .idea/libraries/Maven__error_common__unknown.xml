@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: error:common-:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/common-/unknown/common--unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/error/common-/unknown/common--unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/error/common-/unknown/common--unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
