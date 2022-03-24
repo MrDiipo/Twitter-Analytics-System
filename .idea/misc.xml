@@ -9,10 +9,11 @@
         <option value="$PROJECT_DIR$/../kafka-model/pom.xml" />
         <option value="$PROJECT_DIR$/kafka/kafka-admin/pom.xml" />
         <option value="$PROJECT_DIR$/kafka/kafka-model/pom.xml" />
+        <option value="$PROJECT_DIR$/../common-config/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
