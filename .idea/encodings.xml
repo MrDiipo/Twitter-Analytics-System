@@ -3,7 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app-config-data/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-config-data/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka/kafka-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka/kafka-producer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/twitter-to-kafka-service/src/main/java" charset="UTF-8" />
   </component>
 </project>

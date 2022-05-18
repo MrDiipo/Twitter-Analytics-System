@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/kafka/kafka.iml" filepath="$PROJECT_DIR$/kafka/kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka/kafka-admin/kafka-admin.iml" filepath="$PROJECT_DIR$/kafka/kafka-admin/kafka-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka/kafka-model/kafka-model.iml" filepath="$PROJECT_DIR$/kafka/kafka-model/kafka-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka/kafka-producer/kafka-producer.iml" filepath="$PROJECT_DIR$/kafka/kafka-producer/kafka-producer.iml" />
       <module fileurl="file://$PROJECT_DIR$/twitter-to-kafka-service/twitter-to-kafka-service.iml" filepath="$PROJECT_DIR$/twitter-to-kafka-service/twitter-to-kafka-service.iml" />
     </modules>
   </component>
